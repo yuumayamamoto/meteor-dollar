@@ -16,6 +16,7 @@ import SimpleSchema from 'simpl-schema';
 const formSchema = new SimpleSchema({
   name: String,
   quantity: Number,
+  value: Number,
   condition: {
     type: String,
     allowedValues: ['excellent', 'good', 'fair', 'poor'],

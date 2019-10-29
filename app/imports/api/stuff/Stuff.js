@@ -10,6 +10,7 @@ const StuffSchema = new SimpleSchema({
   name: String,
   quantity: Number,
   owner: String,
+  value: Number,
   condition: {
     type: String,
     allowedValues: ['excellent', 'good', 'fair', 'poor'],
