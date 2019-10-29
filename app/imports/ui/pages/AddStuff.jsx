@@ -29,9 +29,9 @@ class AddStuff extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { name, quantity, condition } = data;
+    const { name, quantity, condition, value } = data;
     const owner = Meteor.user().username;
-    Stuffs.insert({ name, quantity, condition, owner },
+    Stuffs.insert({ name, quantity, condition, owner, value },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -55,6 +55,7 @@ class AddStuff extends React.Component {
                 <NumField name='quantity' decimal={false}/>
                 <SelectField name='condition'/>
                 <SubmitField value='Submit'/>
+                <NumField name='value' decimal={false}/>
                 <ErrorsField/>
               </Segment>
             </AutoForm>

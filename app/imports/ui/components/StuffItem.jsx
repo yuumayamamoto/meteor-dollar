@@ -14,6 +14,7 @@ class StuffItem extends React.Component {
           <Table.Cell>
             <Link to={`/edit/${this.props.stuff._id}`}>Edit</Link>
           </Table.Cell>
+          <Table.Cell>{this.props.stuff.value}</Table.Cell>
         </Table.Row>
     );
   }

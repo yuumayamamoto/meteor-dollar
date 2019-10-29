@@ -26,6 +26,7 @@ class ListStuffAdmin extends React.Component {
                 <Table.HeaderCell>Quantity</Table.HeaderCell>
                 <Table.HeaderCell>Condition</Table.HeaderCell>
                 <Table.HeaderCell>Owner</Table.HeaderCell>
+                <Table.HeaderCell>value</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
